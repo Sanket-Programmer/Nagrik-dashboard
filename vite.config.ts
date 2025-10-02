@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
-    allowedHosts: "nagrik-dashboard.onrender.com",
+    allowedHosts: ["nagrik-dashboard.onrender.com","localhost"],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
